@@ -10,13 +10,13 @@ public class User {
     private String userType;
 
     public User() {
-        this.email = "john.doe@unknown.com";
-        this.name = "John Doe";
-        this.ownedVehicles[0] = "John's Car";
-        this.ownedVehicles[1] = "Doe's Car";
+        this.email = "";
+        this.name = "";
+        this.ownedVehicles[0] = "";
+        this.ownedVehicles[1] = "";
         this.priceMultiplier = 0;
-        this.uid = "John's Unique ID";
-        this.userType = "Mystery";
+        this.uid = "";
+        this.userType = "";
     }
 
     public User(String email, String name, String[] ownedVehicles, double priceMultiplier, String uid, String userType) {
@@ -75,4 +75,5 @@ public class User {
     public void setUserType(String userType) {
         this.userType = userType;
     }
+
 }

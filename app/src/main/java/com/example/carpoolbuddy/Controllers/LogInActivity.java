@@ -12,8 +12,8 @@ import com.google.firebase.firestore.FirebaseFirestore;
 
 public class LogInActivity extends AppCompatActivity {
 
-    private FirebaseAuth firebaseAuth;
-    private FirebaseFirestore firebaseFirestore;
+    private FirebaseAuth mAuth;
+    private FirebaseFirestore firestore;
 
     private EditText emailField;
     private EditText passwordField;
@@ -23,7 +23,7 @@ public class LogInActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        firebaseAuth = FirebaseAuth.getInstance();
+        mAuth = FirebaseAuth.getInstance();
 //        firebaseFirestore = FirebaseFirestore.getInstance();
 
         emailField = findViewById(R.id.emailField);
@@ -31,8 +31,9 @@ public class LogInActivity extends AppCompatActivity {
     }
 
     public void logIn(View view) {
-        System.out.println("LOOK HERE: Hello world");
-        System.out.println(emailField.getText().toString());
-        System.out.println(passwordField.getText().toString());
+        System.out.print("LOOK HERE: Hello world");
+        String email = emailField.getText().toString();
+        String password = passwordField.getText().toString();
+        System.out.print(email +" "+ password);
     }
 }

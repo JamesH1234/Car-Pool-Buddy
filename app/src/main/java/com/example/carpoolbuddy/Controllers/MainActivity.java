@@ -20,4 +20,9 @@ public class MainActivity extends AppCompatActivity {
         Intent logInActivity = new Intent(getBaseContext(), LogInActivity.class);
         startActivity(logInActivity);
     }
+
+    public void toSignUpActivity(View view) {
+        Intent signUpActivity = new Intent(getBaseContext(), SignUpActivity.class);
+        startActivity(signUpActivity);
+    }
 }
